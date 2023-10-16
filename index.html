@@ -7,7 +7,7 @@
     <style>
         #container{
             width:850px;
-            height: 500px;
+            height: 450px;
             
             background-color: blue;
             border: 2px solid black;
@@ -62,10 +62,10 @@
                 }
             }
             
-            if (x_pos[i] <= 50 || x_pos[i] >= 750) {
+            if (x_pos[i] <= 50 || x_pos[i] >= 820) {
                 x_vel[i] = -x_vel[i] * gravity;
             }
-            if (y_pos[i] <= 70 || y_pos[i] >= 420) {
+            if (y_pos[i] <= 70 || y_pos[i] >= 430) {
                 y_vel[i] = -y_vel[i] * gravity;
             }
             pacman[i].style.left = x_pos[i] + 'px';
